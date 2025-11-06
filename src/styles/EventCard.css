@@ -1,0 +1,60 @@
+.event-card {
+  background: #ffffff;
+  border-radius: 14px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+  padding: 18px 22px;
+  margin: 16px auto;
+  max-width: 400px;
+  transition: all 0.25s ease;
+}
+
+.event-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
+}
+
+.event-header {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.9rem;
+  color: #666;
+  margin-bottom: 8px;
+  flex-wrap: wrap; /* gör att text bryts på små skärmar */
+}
+
+.event-sport {
+  font-weight: 600;
+}
+
+.event-name {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #222;
+  margin: 6px 0;
+  text-align: center;
+}
+
+.vs {
+  margin: 5px 0;
+  color: #999;
+  font-weight: bold;
+}
+
+.event-status {
+  text-align: center;
+  color: #555;
+  font-size: 0.95rem;
+  margin-top: 10px;
+}
+@media (max-width: 480px) {
+  .event-card {
+    padding: 14px 16px;
+    max-width: 90%;
+  }
+  .event-name {
+    font-size: 1.1rem;
+  }
+  .event-header {
+    font-size: 0.8rem;
+  }
+}
